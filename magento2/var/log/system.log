@@ -1,0 +1,766 @@
+[2024-06-12T06:24:23.345894+00:00] main.ERROR: Parameter validation failed
+#0 /var/www/html/vendor/symfony/console/Command/Command.php(292): Magento\Setup\Console\Command\InstallCommand->initialize(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#1 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2024-06-12T06:24:46.824859+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2024-06-12T06:24:48.324823+00:00] main.ERROR: Could not validate a connection to Elasticsearch. No alive nodes found in your cluster
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(69): Magento\Setup\Model\SearchConfig->validateSearchEngine()
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1206): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(407): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(237): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2024-06-12T06:29:52.067650+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2024-06-12T06:53:00.797749+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T06:53:00.808330+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T06:53:00.810029+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T06:53:00.810825+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T06:53:00.811161+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T06:53:00.811450+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T06:53:00.935083+00:00] main.ERROR: The path "/var/www/html/pub/static/frontend/Magento/luma/en_US/requirejs-config.js" is not writable. [] []
+[2024-06-12T06:53:01.880535+00:00] main.ERROR: The path "/var/www/html/pub/static/frontend/Magento/luma/en_US/requirejs-config.js" is not writable. [] []
+[2024-06-12T07:24:50.116804+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:24:50.117379+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:24:50.118358+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:24:50.118751+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:24:50.119012+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:24:50.119269+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:24:50.260946+00:00] main.ERROR: The path "/var/www/html/pub/static/frontend/Magento/luma/en_US/requirejs-config.js" is not writable. [] []
+[2024-06-12T07:26:21.007532+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:26:21.007954+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:26:21.008456+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:26:21.008653+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:26:21.008784+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:26:21.008912+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:31:07.620555+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:31:07.621016+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:31:07.621496+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:31:07.621709+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:31:07.621875+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:31:07.622005+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T07:41:03.921485+00:00] main.ERROR: The default website isn't defined. Set the website and try again. [] []
+[2024-06-12T07:45:32.196378+00:00] main.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.core_config_data' doesn't exist, query was: SELECT `main_table`.* FROM `core_config_data` AS `main_table` WHERE (`scope` = 'default') AND (`scope_id` = '0') AND (`path` LIKE 'web/%')
+#0 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(614): Magento\Framework\DB\Adapter\Pdo\Mysql->performQuery(Object(Closure))
+#1 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(703): Magento\Framework\DB\Adapter\Pdo\Mysql->_query('SELECT `main_ta...', Array)
+#2 /var/www/html/generated/code/Magento/Framework/DB/Adapter/Pdo/Mysql/Interceptor.php(95): Magento\Framework\DB\Adapter\Pdo\Mysql->query(Object(Magento\Framework\DB\Select), Array)
+#3 /var/www/html/vendor/magento/zend-db/library/Zend/Db/Adapter/Abstract.php(737): Magento\Framework\DB\Adapter\Pdo\Mysql\Interceptor->query(Object(Magento\Framework\DB\Select), Array)
+#4 /var/www/html/generated/code/Magento/Framework/DB/Adapter/Pdo/Mysql/Interceptor.php(1094): Zend_Db_Adapter_Abstract->fetchAll(Object(Magento\Framework\DB\Select), Array, 2)
+#5 /var/www/html/vendor/magento/framework/Data/Collection/Db/FetchStrategy/Query.php(21): Magento\Framework\DB\Adapter\Pdo\Mysql\Interceptor->fetchAll(Object(Magento\Framework\DB\Select), Array)
+#6 /var/www/html/vendor/magento/framework/Data/Collection/AbstractDb.php(1011): Magento\Framework\Data\Collection\Db\FetchStrategy\Query->fetchAll(Object(Magento\Framework\DB\Select), Array)
+#7 /var/www/html/vendor/magento/framework/Data/Collection/AbstractDb.php(900): Magento\Framework\Data\Collection\AbstractDb->_fetchAll(Object(Magento\Framework\DB\Select))
+#8 /var/www/html/generated/code/Magento/Config/Model/ResourceModel/Config/Data/Collection/Interceptor.php(347): Magento\Framework\Data\Collection\AbstractDb->getData()
+#9 /var/www/html/vendor/magento/framework/Data/Collection/AbstractDb.php(793): Magento\Config\Model\ResourceModel\Config\Data\Collection\Interceptor->getData()
+#10 /var/www/html/generated/code/Magento/Config/Model/ResourceModel/Config/Data/Collection/Interceptor.php(329): Magento\Framework\Data\Collection\AbstractDb->loadWithFilter(false, false)
+#11 /var/www/html/vendor/magento/framework/Data/Collection/AbstractDb.php(777): Magento\Config\Model\ResourceModel\Config\Data\Collection\Interceptor->loadWithFilter(false, false)
+#12 /var/www/html/generated/code/Magento/Config/Model/ResourceModel/Config/Data/Collection/Interceptor.php(320): Magento\Framework\Data\Collection\AbstractDb->load(false, false)
+#13 /var/www/html/vendor/magento/module-config/Model/Config/Loader.php(60): Magento\Config\Model\ResourceModel\Config\Data\Collection\Interceptor->load()
+#14 /var/www/html/vendor/magento/module-config/Model/Config.php(649): Magento\Config\Model\Config\Loader->getConfigByPath('web', 'default', 0, true)
+#15 /var/www/html/vendor/magento/module-config/Model/Config.php(189): Magento\Config\Model\Config->_getConfig(true)
+#16 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1190): Magento\Config\Model\Config->save()
+#17 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallStoreConfigurationCommand.php(129): Magento\Setup\Model\Installer->installUserConfig(Array)
+#18 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Setup\Console\Command\InstallStoreConfigurationCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallStoreConfigurationCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#24 {main} [] []
+[2024-06-12T07:47:42.489184+00:00] main.ERROR: Parameter validation failed
+#0 /var/www/html/vendor/symfony/console/Command/Command.php(292): Magento\Setup\Console\Command\InstallCommand->initialize(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#1 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2024-06-12T07:50:54.369575+00:00] main.ERROR: The default website isn't defined. Set the website and try again.
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds(NULL)
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData('website', NULL)
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore(NULL)
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore(NULL)
+#8 /var/www/html/vendor/magento/framework/App/Config/ScopeCodeResolver.php(49): Magento\Store\Model\Resolver\Store->getScope(NULL)
+#9 /var/www/html/vendor/magento/framework/App/Config.php(68): Magento\Framework\App\Config\ScopeCodeResolver->resolve('stores', NULL)
+#10 /var/www/html/vendor/magento/framework/Locale/Resolver.php(110): Magento\Framework\App\Config->getValue('general/locale/...', 'stores')
+#11 /var/www/html/vendor/magento/framework/Locale/Resolver.php(128): Magento\Framework\Locale\Resolver->getDefaultLocale()
+#12 /var/www/html/vendor/magento/framework/Locale/Resolver.php(82): Magento\Framework\Locale\Resolver->setLocale(NULL)
+#13 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\Framework\Locale\Resolver->__construct(Object(Magento\Framework\App\Config), 'general/locale/...', 'store', NULL, NULL)
+#14 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Framewo...', Array)
+#15 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#16 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#17 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeResolver', 'Magento\\Framewo...')
+#18 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#19 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#20 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#21 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#22 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#23 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeDate', 'Magento\\Framewo...')
+#24 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#25 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#26 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#27 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#28 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#29 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'dateTime', 'RefreshLock')
+#30 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('RefreshLock', Array, Array)
+#31 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('RefreshLock', Array, Array)
+#32 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('RefreshLock', Array, Array)
+#33 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('RefreshLock')
+#34 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('RefreshLock')
+#35 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'lock', 'Magento\\Message...')
+#36 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Message...', Array, Array)
+#37 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Message...', Array, Array)
+#38 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Message...', Array, Array)
+#39 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Message...')
+#40 /var/www/html/vendor/magento/framework/Interception/PluginList/PluginList.php(173): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Message...')
+#41 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(144): Magento\Framework\Interception\PluginList\PluginList->getPlugin('Magento\\Framewo...', 'amqp_maintenanc...')
+#42 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\MaintenanceMode\Interceptor->Magento\Framework\Interception\{closure}(1)
+#43 /var/www/html/generated/code/Magento/Framework/App/MaintenanceMode/Interceptor.php(32): Magento\Framework\App\MaintenanceMode\Interceptor->___callPlugins('set', Array, Array)
+#44 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1487): Magento\Framework\App\MaintenanceMode\Interceptor->set(1)
+#45 [internal function]: Magento\Setup\Model\Installer->setMaintenanceMode(1)
+#46 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(407): call_user_func_array(Array, Array)
+#47 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(237): Magento\Setup\Model\Installer->install(Array)
+#48 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#49 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#50 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#51 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#52 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#53 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#54 {main} [] []
+[2024-06-12T07:52:04.807978+00:00] main.ERROR: The default website isn't defined. Set the website and try again.
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds(NULL)
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData('website', NULL)
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore(NULL)
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore(NULL)
+#8 /var/www/html/vendor/magento/framework/App/Config/ScopeCodeResolver.php(49): Magento\Store\Model\Resolver\Store->getScope(NULL)
+#9 /var/www/html/vendor/magento/framework/App/Config.php(68): Magento\Framework\App\Config\ScopeCodeResolver->resolve('stores', NULL)
+#10 /var/www/html/vendor/magento/framework/Locale/Resolver.php(110): Magento\Framework\App\Config->getValue('general/locale/...', 'stores')
+#11 /var/www/html/vendor/magento/framework/Locale/Resolver.php(128): Magento\Framework\Locale\Resolver->getDefaultLocale()
+#12 /var/www/html/vendor/magento/framework/Locale/Resolver.php(82): Magento\Framework\Locale\Resolver->setLocale(NULL)
+#13 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\Framework\Locale\Resolver->__construct(Object(Magento\Framework\App\Config), 'general/locale/...', 'store', NULL, NULL)
+#14 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Framewo...', Array)
+#15 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#16 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#17 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeResolver', 'Magento\\Framewo...')
+#18 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#19 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#20 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#21 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#22 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#23 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeDate', 'Magento\\Framewo...')
+#24 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#25 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#26 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#27 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#28 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#29 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'dateTime', 'RefreshLock')
+#30 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('RefreshLock', Array, Array)
+#31 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('RefreshLock', Array, Array)
+#32 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('RefreshLock', Array, Array)
+#33 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('RefreshLock')
+#34 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('RefreshLock')
+#35 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'lock', 'Magento\\Message...')
+#36 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Message...', Array, Array)
+#37 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Message...', Array, Array)
+#38 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Message...', Array, Array)
+#39 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Message...')
+#40 /var/www/html/vendor/magento/framework/Interception/PluginList/PluginList.php(173): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Message...')
+#41 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(144): Magento\Framework\Interception\PluginList\PluginList->getPlugin('Magento\\Framewo...', 'amqp_maintenanc...')
+#42 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\MaintenanceMode\Interceptor->Magento\Framework\Interception\{closure}(1)
+#43 /var/www/html/generated/code/Magento/Framework/App/MaintenanceMode/Interceptor.php(32): Magento\Framework\App\MaintenanceMode\Interceptor->___callPlugins('set', Array, Array)
+#44 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1487): Magento\Framework\App\MaintenanceMode\Interceptor->set(1)
+#45 [internal function]: Magento\Setup\Model\Installer->setMaintenanceMode(1)
+#46 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(407): call_user_func_array(Array, Array)
+#47 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(237): Magento\Setup\Model\Installer->install(Array)
+#48 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#49 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#50 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#51 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#52 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#53 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#54 {main} [] []
+[2024-06-12T07:53:47.577836+00:00] main.ERROR: The default website isn't defined. Set the website and try again.
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds(NULL)
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData('website', NULL)
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore(NULL)
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore(NULL)
+#8 /var/www/html/vendor/magento/framework/App/Config/ScopeCodeResolver.php(49): Magento\Store\Model\Resolver\Store->getScope(NULL)
+#9 /var/www/html/vendor/magento/framework/App/Config.php(68): Magento\Framework\App\Config\ScopeCodeResolver->resolve('stores', NULL)
+#10 /var/www/html/vendor/magento/framework/Locale/Resolver.php(110): Magento\Framework\App\Config->getValue('general/locale/...', 'stores')
+#11 /var/www/html/vendor/magento/framework/Locale/Resolver.php(128): Magento\Framework\Locale\Resolver->getDefaultLocale()
+#12 /var/www/html/vendor/magento/framework/Locale/Resolver.php(82): Magento\Framework\Locale\Resolver->setLocale(NULL)
+#13 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\Framework\Locale\Resolver->__construct(Object(Magento\Framework\App\Config), 'general/locale/...', 'store', NULL, NULL)
+#14 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Framewo...', Array)
+#15 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#16 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#17 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeResolver', 'Magento\\Framewo...')
+#18 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#19 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#20 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#21 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#22 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#23 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeDate', 'Magento\\Framewo...')
+#24 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#25 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#26 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#27 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#28 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#29 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'dateTime', 'RefreshLock')
+#30 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('RefreshLock', Array, Array)
+#31 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('RefreshLock', Array, Array)
+#32 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('RefreshLock', Array, Array)
+#33 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('RefreshLock')
+#34 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('RefreshLock')
+#35 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'lock', 'Magento\\Message...')
+#36 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Message...', Array, Array)
+#37 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Message...', Array, Array)
+#38 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Message...', Array, Array)
+#39 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Message...')
+#40 /var/www/html/vendor/magento/framework/Interception/PluginList/PluginList.php(173): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Message...')
+#41 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(144): Magento\Framework\Interception\PluginList\PluginList->getPlugin('Magento\\Framewo...', 'amqp_maintenanc...')
+#42 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\MaintenanceMode\Interceptor->Magento\Framework\Interception\{closure}(1)
+#43 /var/www/html/generated/code/Magento/Framework/App/MaintenanceMode/Interceptor.php(32): Magento\Framework\App\MaintenanceMode\Interceptor->___callPlugins('set', Array, Array)
+#44 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1487): Magento\Framework\App\MaintenanceMode\Interceptor->set(1)
+#45 [internal function]: Magento\Setup\Model\Installer->setMaintenanceMode(1)
+#46 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(407): call_user_func_array(Array, Array)
+#47 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(237): Magento\Setup\Model\Installer->install(Array)
+#48 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#49 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#50 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#51 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#52 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#53 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#54 {main} [] []
+[2024-06-12T07:55:37.887476+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2024-06-12T09:01:07.700755+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:01:07.701278+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:01:07.701729+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:01:07.701916+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:01:07.702042+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:01:07.702166+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:28:37.572958+00:00] main.ERROR: The default website isn't defined. Set the website and try again. [] []
+[2024-06-12T09:31:29.583042+00:00] main.ERROR: The default website isn't defined. Set the website and try again. [] []
+[2024-06-12T09:31:50.510667+00:00] main.ERROR: The default website isn't defined. Set the website and try again.
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds(NULL)
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData('website', NULL)
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore(NULL)
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore(NULL)
+#8 /var/www/html/vendor/magento/framework/App/Config/ScopeCodeResolver.php(49): Magento\Store\Model\Resolver\Store->getScope(NULL)
+#9 /var/www/html/vendor/magento/framework/App/Config.php(68): Magento\Framework\App\Config\ScopeCodeResolver->resolve('stores', NULL)
+#10 /var/www/html/vendor/magento/framework/Locale/Resolver.php(110): Magento\Framework\App\Config->getValue('general/locale/...', 'stores')
+#11 /var/www/html/vendor/magento/framework/Locale/Resolver.php(128): Magento\Framework\Locale\Resolver->getDefaultLocale()
+#12 /var/www/html/vendor/magento/framework/Locale/Resolver.php(82): Magento\Framework\Locale\Resolver->setLocale(NULL)
+#13 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\Framework\Locale\Resolver->__construct(Object(Magento\Framework\App\Config), 'general/locale/...', 'store', NULL, NULL)
+#14 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Framewo...', Array)
+#15 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#16 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#17 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeResolver', 'Magento\\Framewo...')
+#18 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#19 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#20 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#21 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#22 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#23 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'localeDate', 'Magento\\Framewo...')
+#24 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Framewo...', Array, Array)
+#25 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Framewo...', Array, Array)
+#26 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Framewo...', Array, Array)
+#27 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Framewo...')
+#28 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Framewo...')
+#29 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'dateTime', 'RefreshLock')
+#30 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('RefreshLock', Array, Array)
+#31 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('RefreshLock', Array, Array)
+#32 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('RefreshLock', Array, Array)
+#33 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('RefreshLock')
+#34 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(170): Magento\Framework\ObjectManager\ObjectManager->get('RefreshLock')
+#35 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(276): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgument(Array, 'Magento\\Framewo...', NULL, 'lock', 'Magento\\Message...')
+#36 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(239): Magento\Framework\ObjectManager\Factory\AbstractFactory->getResolvedArgument('Magento\\Message...', Array, Array)
+#37 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(34): Magento\Framework\ObjectManager\Factory\AbstractFactory->resolveArgumentsInRuntime('Magento\\Message...', Array, Array)
+#38 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(59): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->_resolveArguments('Magento\\Message...', Array, Array)
+#39 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Dynamic\Developer->create('Magento\\Message...')
+#40 /var/www/html/vendor/magento/framework/Interception/PluginList/PluginList.php(173): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Message...')
+#41 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(144): Magento\Framework\Interception\PluginList\PluginList->getPlugin('Magento\\Framewo...', 'amqp_maintenanc...')
+#42 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\MaintenanceMode\Interceptor->Magento\Framework\Interception\{closure}(true)
+#43 /var/www/html/generated/code/Magento/Framework/App/MaintenanceMode/Interceptor.php(32): Magento\Framework\App\MaintenanceMode\Interceptor->___callPlugins('set', Array, Array)
+#44 /var/www/html/vendor/magento/module-backend/Console/Command/AbstractMaintenanceCommand.php(99): Magento\Framework\App\MaintenanceMode\Interceptor->set(true)
+#45 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Backend\Console\Command\AbstractMaintenanceCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#46 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#47 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Backend\Console\Command\MaintenanceEnableCommand\Interceptor->___callParent('run', Array)
+#48 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Backend\Console\Command\MaintenanceEnableCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#49 /var/www/html/generated/code/Magento/Backend/Console/Command/MaintenanceEnableCommand/Interceptor.php(77): Magento\Backend\Console\Command\MaintenanceEnableCommand\Interceptor->___callPlugins('run', Array, Array)
+#50 /var/www/html/vendor/symfony/console/Application.php(1078): Magento\Backend\Console\Command\MaintenanceEnableCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#51 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Backend\Console\Command\MaintenanceEnableCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#52 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#53 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#54 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#55 {main} [] []
+[2024-06-12T09:33:44.046822+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T09:36:09.100034+00:00] main.ERROR: Unable to proceed: the maintenance mode is enabled.  [] []
+[2024-06-12T09:36:47.875614+00:00] main.ERROR: The default website isn't defined. Set the website and try again.
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds(NULL)
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData('website', NULL)
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore(NULL)
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore(NULL)
+#8 /var/www/html/vendor/magento/framework/App/Config/ScopeCodeResolver.php(49): Magento\Store\Model\Resolver\Store->getScope(NULL)
+#9 /var/www/html/vendor/magento/framework/App/Config.php(68): Magento\Framework\App\Config\ScopeCodeResolver->resolve('stores', NULL)
+#10 /var/www/html/vendor/magento/framework/Locale/Resolver.php(110): Magento\Framework\App\Config->getValue('general/locale/...', 'stores')
+#11 /var/www/html/vendor/magento/framework/Locale/Resolver.php(128): Magento\Framework\Locale\Resolver->getDefaultLocale()
+#12 /var/www/html/vendor/magento/framework/Locale/Resolver.php(82): Magento\Framework\Locale\Resolver->setLocale(NULL)
+#13 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\Framework\Locale\Resolver->__construct(Object(Magento\Framework\App\Config), 'general/locale/...', 'store', NULL, NULL)
+#14 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Framewo...', Array)
+#15 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Framewo...')
+#16 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Framewo...')
+#17 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Framewo...')
+#18 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Framewo...')
+#19 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Framewo...')
+#20 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Framewo...')
+#21 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('RefreshLock')
+#22 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('RefreshLock')
+#23 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Message...')
+#24 /var/www/html/vendor/magento/framework/Interception/PluginList/PluginList.php(173): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Message...')
+#25 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(144): Magento\Framework\Interception\PluginList\PluginList->getPlugin('Magento\\Framewo...', 'amqp_maintenanc...')
+#26 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\MaintenanceMode\Interceptor->Magento\Framework\Interception\{closure}(false)
+#27 /var/www/html/generated/code/Magento/Framework/App/MaintenanceMode/Interceptor.php(23): Magento\Framework\App\MaintenanceMode\Interceptor->___callPlugins('set', Array, Array)
+#28 /var/www/html/vendor/magento/module-backend/Console/Command/AbstractMaintenanceCommand.php(99): Magento\Framework\App\MaintenanceMode\Interceptor->set(false)
+#29 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Backend\Console\Command\AbstractMaintenanceCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#30 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#31 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->___callParent('run', Array)
+#32 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#33 /var/www/html/generated/code/Magento/Backend/Console/Command/MaintenanceDisableCommand/Interceptor.php(23): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->___callPlugins('run', Array, Array)
+#34 /var/www/html/vendor/symfony/console/Application.php(1078): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#35 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#36 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#37 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#38 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#39 {main} [] []
+[2024-06-12T09:36:55.546956+00:00] main.ERROR: The default website isn't defined. Set the website and try again. [] []
+[2024-06-12T09:37:29.598830+00:00] main.ERROR: Connection "default" is not defined
+#0 /var/www/html/vendor/magento/framework/App/ResourceConnection.php(111): Magento\Framework\App\ResourceConnection->getConnectionByName('default')
+#1 /var/www/html/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php(312): Magento\Framework\App\ResourceConnection->getConnection('default')
+#2 /var/www/html/vendor/magento/module-message-queue/Model/ResourceModel/Lock.php(103): Magento\Framework\Model\ResourceModel\Db\AbstractDb->getConnection()
+#3 /var/www/html/vendor/magento/module-message-queue/Model/Plugin/ResourceModel/Lock.php(39): Magento\MessageQueue\Model\ResourceModel\Lock->releaseOutdatedLocks()
+#4 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(146): Magento\MessageQueue\Model\Plugin\ResourceModel\Lock->afterSet(Object(Magento\Framework\App\MaintenanceMode\Interceptor), true, false)
+#5 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\MaintenanceMode\Interceptor->Magento\Framework\Interception\{closure}(false)
+#6 /var/www/html/generated/code/Magento/Framework/App/MaintenanceMode/Interceptor.php(23): Magento\Framework\App\MaintenanceMode\Interceptor->___callPlugins('set', Array, Array)
+#7 /var/www/html/vendor/magento/module-backend/Console/Command/AbstractMaintenanceCommand.php(99): Magento\Framework\App\MaintenanceMode\Interceptor->set(false)
+#8 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Backend\Console\Command\AbstractMaintenanceCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->___callParent('run', Array)
+#11 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /var/www/html/generated/code/Magento/Backend/Console/Command/MaintenanceDisableCommand/Interceptor.php(23): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->___callPlugins('run', Array, Array)
+#13 /var/www/html/vendor/symfony/console/Application.php(1078): Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Backend\Console\Command\MaintenanceDisableCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#18 {main} [] []
+[2024-06-12T09:52:06.874842+00:00] main.ERROR: Error: Application is not installed yet.  [] []
+[2024-06-12T09:52:22.863488+00:00] main.ERROR: Error: Application is not installed yet.  [] []
+[2024-06-12T09:54:08.238167+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2024-06-12T09:54:09.065397+00:00] main.CRITICAL: Type Error occurred when creating object: Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor, Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor::__construct(): Argument #7 ($data) must be of type array, null given, called in /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121 [] []
+[2024-06-12T09:54:32.443048+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:54:32.443494+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:54:32.443993+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:54:32.444182+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:54:32.444313+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:54:32.444439+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.805145+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.805725+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.805866+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.805992+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806116+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806250+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806374+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806497+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806618+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806740+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806874+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.806996+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.807118+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.807242+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.807372+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.807487+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.807745+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.807858+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:54:40.808056+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:54:40.808166+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:54:40.808278+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:54:40.808388+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:54:40.808496+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T09:54:40.808634+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:54:40.808743+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:54:40.808863+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T09:55:36.194550+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.194879+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195013+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195138+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195260+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195429+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195562+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195684+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195806+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.195928+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.196054+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.196176+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.196296+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.196416+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.196537+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.196658+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.196940+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.197068+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:36.197280+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:36.197402+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:36.197524+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:36.197659+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:36.197843+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T09:55:36.198001+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:36.198124+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:36.198259+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T09:55:57.067532+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.067908+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.068103+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.068299+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.068484+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.068682+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.068873+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.069057+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.069241+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.069423+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.069604+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.069784+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.069932+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.070056+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.070178+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.070301+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.070586+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.070713+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T09:55:57.070930+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:57.071054+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:57.071176+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:57.071297+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:57.071461+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T09:55:57.071615+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:57.071739+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T09:55:57.071875+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T10:17:08.512651+00:00] main.ERROR: The default website isn't defined. Set the website and try again. [] []
+[2024-06-12T10:17:16.632321+00:00] main.ERROR: The default website isn't defined. Set the website and try again. [] []
+[2024-06-12T10:17:17.438313+00:00] main.ERROR: The default website isn't defined. Set the website and try again. [] []
+[2024-06-12T10:17:49.302497+00:00] main.ERROR: The default website isn't defined. Set the website and try again.
+#0 /var/www/html/vendor/magento/module-store/Model/StoreResolver/Website.php(49): Magento\Store\Model\WebsiteRepository->getDefault()
+#1 /var/www/html/vendor/magento/module-store/Model/StoresData.php(67): Magento\Store\Model\StoreResolver\Website->getAllowedStoreIds(NULL)
+#2 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(138): Magento\Store\Model\StoresData->getStoresData('website', NULL)
+#3 /var/www/html/vendor/magento/module-store/Model/StoreResolver.php(97): Magento\Store\Model\StoreResolver->getStoresData()
+#4 /var/www/html/generated/code/Magento/Store/Model/StoreResolver/Proxy.php(105): Magento\Store\Model\StoreResolver->getCurrentStoreId()
+#5 /var/www/html/vendor/magento/module-store/Model/StoreManager.php(159): Magento\Store\Model\StoreResolver\Proxy->getCurrentStoreId()
+#6 /var/www/html/generated/code/Magento/Store/Model/StoreManagerInterface/Proxy.php(129): Magento\Store\Model\StoreManager->getStore(NULL)
+#7 /var/www/html/vendor/magento/module-store/Model/Resolver/Store.php(30): Magento\Store\Model\StoreManagerInterface\Proxy->getStore(NULL)
+#8 /var/www/html/vendor/magento/framework/App/Config/ScopeCodeResolver.php(49): Magento\Store\Model\Resolver\Store->getScope(NULL)
+#9 /var/www/html/vendor/magento/framework/App/Config.php(68): Magento\Framework\App\Config\ScopeCodeResolver->resolve('stores', NULL)
+#10 /var/www/html/vendor/magento/framework/Locale/Resolver.php(110): Magento\Framework\App\Config->getValue('general/locale/...', 'stores')
+#11 /var/www/html/vendor/magento/framework/Locale/Resolver.php(128): Magento\Framework\Locale\Resolver->getDefaultLocale()
+#12 /var/www/html/vendor/magento/framework/Locale/Resolver.php(82): Magento\Framework\Locale\Resolver->setLocale(NULL)
+#13 /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(121): Magento\Framework\Locale\Resolver->__construct(Object(Magento\Framework\App\Config), 'general/locale/...', 'store', NULL, NULL)
+#14 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Magento\\Framewo...', Array)
+#15 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Framewo...')
+#16 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Framewo...')
+#17 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Framewo...')
+#18 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Framewo...')
+#19 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Framewo...')
+#20 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Magento\\Framewo...')
+#21 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('RefreshLock')
+#22 /var/www/html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('RefreshLock')
+#23 /var/www/html/vendor/magento/framework/ObjectManager/ObjectManager.php(73): Magento\Framework\ObjectManager\Factory\Compiled->create('Magento\\Message...')
+#24 /var/www/html/vendor/magento/framework/Interception/PluginList/PluginList.php(173): Magento\Framework\ObjectManager\ObjectManager->get('Magento\\Message...')
+#25 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(144): Magento\Framework\Interception\PluginList\PluginList->getPlugin('Magento\\Framewo...', 'amqp_maintenanc...')
+#26 /var/www/html/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\MaintenanceMode\Interceptor->Magento\Framework\Interception\{closure}(1)
+#27 /var/www/html/generated/code/Magento/Framework/App/MaintenanceMode/Interceptor.php(23): Magento\Framework\App\MaintenanceMode\Interceptor->___callPlugins('set', Array, Array)
+#28 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1487): Magento\Framework\App\MaintenanceMode\Interceptor->set(1)
+#29 [internal function]: Magento\Setup\Model\Installer->setMaintenanceMode(1)
+#30 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(407): call_user_func_array(Array, Array)
+#31 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(237): Magento\Setup\Model\Installer->install(Array)
+#32 /var/www/html/vendor/symfony/console/Command/Command.php(326): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#33 /var/www/html/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#34 /var/www/html/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#35 /var/www/html/vendor/magento/framework/Console/Cli.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#36 /var/www/html/vendor/symfony/console/Application.php(175): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#37 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#38 {main} [] []
+[2024-06-12T10:18:35.742816+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2024-06-12T10:18:36.608728+00:00] main.CRITICAL: Type Error occurred when creating object: Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor, Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor::__construct(): Argument #7 ($data) must be of type array, null given, called in /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121 [] []
+[2024-06-12T10:20:00.574423+00:00] main.ERROR: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:20:00.575312+00:00] main.CRITICAL: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:21:56.163990+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:21:57.541737+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:21:58.243436+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:21:58.481224+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:22:04.771033+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:22:08.835398+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:23:20.319420+00:00] main.ERROR: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:23:20.321045+00:00] main.CRITICAL: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:23:29.040663+00:00] main.ERROR: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:23:29.041075+00:00] main.CRITICAL: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:23:39.162319+00:00] main.ERROR: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:23:39.162931+00:00] main.CRITICAL: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:23:44.872607+00:00] main.ERROR: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:23:44.873223+00:00] main.CRITICAL: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:27:16.616469+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:27:18.005841+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:28:42.218434+00:00] main.ERROR: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:28:42.220423+00:00] main.CRITICAL: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:28:57.705463+00:00] main.ERROR: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:28:57.706846+00:00] main.CRITICAL: Unable to resolve the source file for 'adminhtml/Magento/backend/en_US/underscore-umd.js.map' [] []
+[2024-06-12T10:34:57.217804+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/Framework/App/Http/.
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:36:05.171594+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-06-12T10:36:42.088583+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-06-12T10:37:31.785987+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-06-12T10:37:45.024097+00:00] main.CRITICAL: Type Error occurred when creating object: Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor, Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor::__construct(): Argument #7 ($data) must be of type array, null given, called in /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121 [] []
+[2024-06-12T10:37:45.027764+00:00] main.CRITICAL: Type Error occurred when creating object: Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor, Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor::__construct(): Argument #7 ($data) must be of type array, null given, called in /var/www/html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121 [] []
+[2024-06-12T10:37:45.472560+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-06-12T10:40:03.439064+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.441586+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.441851+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.442081+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.442306+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.442544+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.442764+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.442986+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.443230+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.443476+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.443698+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.443967+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.444194+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.444415+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.444643+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.444933+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.445505+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.445754+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:03.446189+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:03.446456+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:03.446687+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:03.446962+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:03.447206+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T10:40:03.447523+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:03.447750+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:03.448012+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T10:40:07.689365+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.689895+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.690185+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.690396+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.690599+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.690816+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.691019+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.691221+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.691445+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.691647+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.691849+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.692051+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.692251+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.692452+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.692654+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.692855+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.693348+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.693568+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T10:40:07.693953+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:07.694197+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:07.694524+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:07.694867+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:07.695285+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T10:40:07.695656+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:07.695918+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T10:40:07.696146+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T10:40:33.340531+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-06-12T10:42:54.432643+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.128" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.128): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:43:16.531934+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-06-12T10:44:37.709648+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:37.711047+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:37.712443+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:37.712976+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:37.713287+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:37.713611+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:46.685704+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:46.687345+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:44:46.689721+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:45:04.719229+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:45:04.721168+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:45:04.724071+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:45:14.090631+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/CatalogInventory/Model/StockRegistry/.
+Class Magento\CatalogInventory\Model\StockRegistry\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:45:14.095820+00:00] main.ERROR: Class "Magento\CatalogInventory\Model\StockRegistry\Interceptor" does not exist [] []
+[2024-06-12T10:45:15.206246+00:00] main.CRITICAL: Can't create directory /var/www/html/generated/code/Magento/CatalogInventory/Model/StockRegistry/.
+Class Magento\CatalogInventory\Model\StockRegistry\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2024-06-12T10:45:15.214165+00:00] main.CRITICAL: Class "Magento\CatalogInventory\Model\StockRegistry\Interceptor" does not exist [] []
+[2024-06-12T10:45:15.217637+00:00] main.ERROR: Invalid block type: Magento\Wishlist\Block\Customer\Sidebar [] []
+[2024-06-12T10:49:27.889830+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:49:27.892304+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:49:27.893425+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:49:27.894053+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:49:27.894406+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T10:49:27.894635+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.569945+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.570569+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.570713+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.570846+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.570979+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.571122+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.571262+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.571403+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.571541+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.571673+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.571804+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.571935+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.572066+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.572196+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.572327+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.572459+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.572761+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.572893+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:00:51.573124+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:00:51.573259+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:00:51.573391+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:00:51.573520+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:00:51.573650+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T11:00:51.573814+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:00:51.573944+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:00:51.574092+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T11:00:58.679744+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and 'header' respectively. [] []
+[2024-06-12T11:00:59.849699+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:00:59.850086+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:00:59.850542+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:00:59.850727+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:00:59.850853+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:00:59.850976+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:02:35.572968+00:00] main.ERROR: Sample Data error: Warning: file_get_contents(/var/www/html/pub/media/downloadable/files/links/l/u/luma_background_-_model_against_fence_4_sec_.mp4): Failed to open stream: No such file or directory in /var/www/html/vendor/magento/module-downloadable-sample-data/Model/Product/Converter.php on line 132 [] []
+[2024-06-12T11:09:32.896642+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2024-06-12T11:09:33.037401+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2024-06-12T11:09:33.232050+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2024-06-12T11:09:33.663636+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2024-06-12T11:09:33.806585+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2024-06-12T11:09:34.054453+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 100000; Allocated memory size: 50000000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2024-06-12T11:09:38.802990+00:00] main.WARNING: Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size. Please update innodb_buffer_pool_size or decrease batch size value (which decreases memory usages for the temporary table). Current batch size: 3334; Allocated memory size: 40008000 bytes; InnoDB buffer pool size: 134217728 bytes. [] []
+[2024-06-12T11:17:06.244737+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.247384+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.247776+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.248256+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.248699+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.249160+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.249553+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.249930+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.250299+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.250669+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.251045+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.251452+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.251822+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.252185+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.252552+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.252914+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.253606+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.253975+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:17:06.254532+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:17:06.254899+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:17:06.255266+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:17:06.255660+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:17:06.256069+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T11:17:06.256400+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:17:06.256648+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:17:06.256952+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T11:17:06.337328+00:00] main.ERROR: Directory "/var/www/html/pub/static/adminhtml" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:17:08.878035+00:00] main.ERROR: Directory "/var/www/html/pub/static/frontend" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:24:26.428739+00:00] main.INFO: Broken reference: the 'tracking' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.432109+00:00] main.INFO: Broken reference: the 'notification_area' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.432836+00:00] main.INFO: Broken reference: the 'unread_system_messages' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.433497+00:00] main.INFO: Broken reference: the 'notification_window' element cannot be added as child to 'notifications', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.434130+00:00] main.INFO: Broken reference: the 'notification.messages' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.434941+00:00] main.INFO: Broken reference: the 'global_notices' element cannot be added as child to 'global.notices', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.435744+00:00] main.INFO: Broken reference: the 'logo' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.436441+00:00] main.INFO: Broken reference: the 'global.search' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.437134+00:00] main.INFO: Broken reference: the 'user' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.437817+00:00] main.INFO: Broken reference: the 'menu' element cannot be added as child to 'page.menu', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.438492+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.breadcrumbs', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.439173+00:00] main.INFO: Broken reference: the 'formkey' element cannot be added as child to 'page.formkey', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.439876+00:00] main.INFO: Broken reference: the 'page.title' element cannot be added as child to 'main.top', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.440546+00:00] main.INFO: Broken reference: the 'messages' element cannot be added as child to 'page.messages', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.441217+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' element cannot be added as child to 'page.main.actions', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.441884+00:00] main.INFO: Broken reference: the 'legal' element cannot be added as child to 'footer', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.443464+00:00] main.INFO: Broken reference: the 'header.inner.left' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.444188+00:00] main.INFO: Broken reference: the 'header.inner.right' element cannot be added as child to 'header', because the latter doesn't exist [] []
+[2024-06-12T11:24:26.445409+00:00] main.INFO: Broken reference: the 'user' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:24:26.446071+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:24:26.446763+00:00] main.INFO: Broken reference: the 'logo' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:24:26.447436+00:00] main.INFO: Broken reference: the 'global.search' tries to reorder itself towards 'logo', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:24:26.448099+00:00] main.INFO: Broken reference: the 'page.actions.toolbar' tries to reorder itself towards '', but their parents are different: 'page.main.actions' and '' respectively. [] []
+[2024-06-12T11:24:26.448916+00:00] main.INFO: Broken reference: the 'header.inner.left' tries to reorder itself towards '', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:24:26.449582+00:00] main.INFO: Broken reference: the 'header.inner.right' tries to reorder itself towards 'header.inner.left', but their parents are different: 'header' and '' respectively. [] []
+[2024-06-12T11:24:26.450306+00:00] main.INFO: Broken reference: the 'notification.messages' tries to reorder itself towards 'user', but their parents are different: 'header.inner.right' and '' respectively. [] []
+[2024-06-12T11:24:26.589850+00:00] main.ERROR: Directory "/var/www/html/pub/static/adminhtml" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:24:27.096340+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:24:27.098325+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:24:27.100852+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:24:27.102041+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:24:27.102738+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:24:27.103407+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:24:27.330473+00:00] main.ERROR: Directory "/var/www/html/pub/static/frontend" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:24:28.954826+00:00] main.ERROR: Directory "/var/www/html/pub/static/frontend" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:24:30.537501+00:00] main.ERROR: Directory "/var/www/html/pub/static/frontend" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:27:34.070904+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:34.072126+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:34.073533+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:34.074180+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:34.074580+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:34.074971+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:34.138285+00:00] main.ERROR: Directory "/var/www/html/pub/static/frontend" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:27:34.876118+00:00] main.ERROR: Directory "/var/www/html/pub/static/frontend" cannot be created Warning!mkdir(): Permission denied [] []
+[2024-06-12T11:27:43.344802+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:43.345593+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:43.346465+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:43.346878+00:00] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:43.347130+00:00] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:27:43.347395+00:00] main.INFO: Broken reference: the 'sidebar.container.paylater' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.508142+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.509042+00:00] main.INFO: Broken reference: the 'header-wrapper' element cannot be added as child to 'header.container', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.509302+00:00] main.INFO: Broken reference: the 'navigation.sections' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.509624+00:00] main.INFO: Broken reference: the 'top.container' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.509840+00:00] main.INFO: Broken reference: the 'breadcrumbs' element cannot be added as child to 'page.top', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.510248+00:00] main.INFO: Broken reference: the 'footer' element cannot be added as child to 'footer-container', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.510805+00:00] main.INFO: Broken reference: the 'catalog.compare.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.511128+00:00] main.INFO: Broken reference: the 'sale.reorder.sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.511870+00:00] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2024-06-12T11:29:44.512312+00:00] main.INFO: Broken reference: the 'header.panel.wrapper' tries to reorder itself towards '', but their parents are different: 'header.container' and '' respectively. [] []
+[2024-06-12T11:29:44.512586+00:00] main.INFO: Broken reference: the 'navigation.sections' tries to reorder itself towards '', but their parents are different: 'page.top' and '' respectively. [] []
