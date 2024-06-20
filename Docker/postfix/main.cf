@@ -1,0 +1,22 @@
+# main.cf
+
+# General Postfix configuration
+inet_interfaces = all
+inet_protocols = ipv4
+mydestination = localhost
+mynetworks = 127.0.0.0/8, [::1]/128, magento2withdocker_magento2-network/8, 172.30.0.5/8
+
+# Mailtrap configuration
+relayhost = [smtp.mailtrap.io]:2525
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_tls_security_level = encrypt
+smtp_tls_note_starttls_offer = yes
+smtp_use_tls = yes
+
+# Additional configuration to avoid issues
+smtp_sasl_mechanism_filter = plain
+
+# Avoid DNS lookups, which can slow down delivery
+disable_dns_lookups = yes

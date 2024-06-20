@@ -6040,6 +6040,38 @@ div[data-content-type='video'] video {
 .cart-summary .google-pay {
   margin-bottom: 14px;
 }
+.yotpo-yotpo-is-enabled .yotpoBottomLine {
+  width: 100%;
+}
+.yotpo-yotpo-is-enabled .yotpo-icon-double-bubble,
+.yotpo-yotpo-is-enabled .yotpo-stars {
+  margin: 0 5px 0 0 !important;
+}
+.yotpo-yotpo-is-enabled .thumbnail .yotpo a {
+  display: inline-block;
+}
+.yotpo-yotpo-is-enabled div.yotpo.bottomLine {
+  display: inline-block;
+  margin: 0 10px 1px 0;
+}
+.yotpo-yotpo-is-enabled div.yotpo.QABottomLine {
+  display: inline-block;
+}
+.yotpo-yotpo-is-enabled div.yotpo.bottomLine.bottomline-position {
+  display: inline-block;
+  margin: 0 10px 1px 0;
+}
+.yotpo-yotpo-is-enabled .product-item .product-item-actions {
+  margin-top: 5px !important;
+}
+.yotpo-yotpo-is-enabled.catalog-category-view.page-products .product-item .product-item-actions,
+.yotpo-yotpo-is-enabled.catalog-product-view.page-products .product-item .product-item-actions {
+  margin-top: 0 !important;
+}
+.yotpo-yotpo-is-enabled.catalog-category-view .product-info-main .product-reviews-summary,
+.yotpo-yotpo-is-enabled.catalog-product-view .product-info-main .product-reviews-summary {
+  width: 100%;
+}
 .block-category-event {
   background: #f0f0f0;
   color: #333333;

@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     libxslt1-dev \
     unzip \
     git \
+    postfix \
+    mailutils \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd zip intl pdo_mysql bcmath sockets soap xsl \
     && pecl install xdebug \
@@ -23,6 +25,56 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Set PHP memory limit
 RUN echo "memory_limit=2G" > /usr/local/etc/php/conf.d/memory-limit.ini
 
-EXPOSE 9000
+# Copy postfix configuration files
+COPY ./Docker/postfix/main.cf /etc/postfix/main.cf
+COPY ./Docker/postfix/sasl_passwd /etc/postfix/sasl_passwd
+
+# Set permissions and generate sasl_passwd.db
+RUN postmap /etc/postfix/sasl_passwd \
+    && chown root:root /etc/postfix/sasl_passwd* \
+    && chmod 600 /etc/postfix/sasl_passwd*
+
+RUN postmap /etc/postfix/sasl_passwd
+RUN /etc/init.d/postfix restart
+
+
+ARG NEW_RELIC_AGENT_VERSION
+ARG NEW_RELIC_LICENSE_KEY
+ARG NEW_RELIC_APPNAME
+ARG NEW_RELIC_ACCOUNT_ID
+
+# Download the New Relic PHP agent archive
+RUN curl -L https://download.newrelic.com/php_agent/archive/${NEW_RELIC_AGENT_VERSION}/newrelic-php5-${NEW_RELIC_AGENT_VERSION}-linux.tar.gz -o /tmp/newrelic-php-agent.tar.gz
+
+# Extract the downloaded archive
+RUN tar -C /tmp -zxvf /tmp/newrelic-php-agent.tar.gz
+
+# Set environment variables for New Relic installation
+RUN export NR_INSTALL_USE_CP_NOT_LN=1 \
+    && export NR_INSTALL_SILENT=1
+
+# Install New Relic PHP agent
+RUN /tmp/newrelic-php5-${NEW_RELIC_AGENT_VERSION}-linux/newrelic-install install
+
+# Clean up temporary files
+RUN rm -rf /tmp/newrelic-php5-* /tmp/nrinstall* /tmp/newrelic-php-agent.tar.gz
+
+
+# Modify newrelic.ini file
+
+RUN if [ ! -f /usr/local/etc/php/conf.d/newrelic.ini ]; then \
+        touch /usr/local/etc/php/conf.d/newrelic.ini; \
+    fi
+
+RUN sed -i \
+  -e "s/newrelic.license[[:space:]]*=[[:space:]]*.*/newrelic.license = ${NEW_RELIC_LICENSE_KEY}/" \
+  -e "s/newrelic.appname[[:space:]]*=[[:space:]]*.*/newrelic.appname = ${NEW_RELIC_APPNAME}/" \
+  -e "\$a newrelic.daemon.address=newrelic-php-daemon:31339" \
+  /usr/local/etc/php/conf.d/newrelic.ini
+
+
+EXPOSE 9000 25 2525
+
+RUN service postfix restart
 
 WORKDIR /var/www/html

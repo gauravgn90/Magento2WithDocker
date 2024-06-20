@@ -129,5 +129,11 @@ return [
     ],
     'install' => [
         'date' => 'Wed, 12 Jun 2024 10:18:42 +0000'
+    ],
+    'http_cache_hosts' => [
+        [
+            'host' => 'magento_varnish',
+            'port' => '6081'
+        ]
     ]
 ];

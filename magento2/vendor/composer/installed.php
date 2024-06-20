@@ -5999,6 +5999,21 @@
                 0 => '*',
             ),
         ),
+        'yotpo/magento2-module-yotpo-reviews' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
+        'yotpo/module-yotpo' => array(
+            'pretty_version' => '3.3.0',
+            'version' => '3.3.0.0',
+            'reference' => null,
+            'type' => 'magento2-module',
+            'install_path' => __DIR__ . '/../yotpo/module-yotpo',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'zf1/zend-cache' => array(
             'dev_requirement' => false,
             'replaced' => array(

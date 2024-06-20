@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="Custom_HelloWorld::menu_item" title="Hello World" module="Custom_HelloWorld" sortOrder="100" action="helloworld/index/index" resource="Magento_Backend::content"/>
+    </menu>
+</config>

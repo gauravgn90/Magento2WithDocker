@@ -31256,6 +31256,39 @@
                 "source": "https://github.com/wikimedia/less.php/tree/v3.2.1"
             },
             "install-path": "../wikimedia/less.php"
+        },
+        {
+            "name": "yotpo/module-yotpo",
+            "version": "3.3.0",
+            "version_normalized": "3.3.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/yotpo/module-yotpo/yotpo-module-yotpo-3.3.0.0.zip",
+                "shasum": "23f0d9b77571158526fd0bdc1b8b92041f5fc4ae"
+            },
+            "require": {
+                "magento/framework": ">=101.0.0",
+                "php": "~5.6.0|^7.0|^8.0"
+            },
+            "replace": {
+                "yotpo/magento2-module-yotpo-reviews": "*"
+            },
+            "type": "magento2-module",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Yotpo\\Yotpo\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Yotpo Reviews extension for Magento2",
+            "install-path": "../yotpo/module-yotpo"
         }
     ],
     "dev": true,

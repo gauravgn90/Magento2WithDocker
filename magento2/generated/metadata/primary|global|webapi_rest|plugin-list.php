@@ -837,6 +837,11 @@
         'sortOrder' => 0,
         'instance' => 'Magento\\CatalogInventory\\Block\\Plugin\\ProductView',
       ),
+      'yotpo_yotpo_catalog_block_product_view_plugin' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Yotpo\\Yotpo\\Plugin\\Catalog\\Block\\Product\\View',
+      ),
     ),
     'Magento\\Catalog\\Model\\Product\\Action' => 
     array (
@@ -3178,6 +3183,22 @@
         'instance' => '\\PayPal\\BraintreeGiftWrapping\\Plugin\\Level23Processing\\PayPal\\AddGiftWrappingPlugin',
       ),
     ),
+    'Magento\\Catalog\\Block\\Product\\ListProduct' => 
+    array (
+      'yotpo_yotpo_catalog_block_product_listproduct_plugin' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Yotpo\\Yotpo\\Plugin\\Catalog\\Block\\Product\\ListProduct',
+      ),
+    ),
+    'Magento\\Review\\Block\\Product\\ReviewRenderer' => 
+    array (
+      'yotpo_yotpo_review_block_product_reviewrenderer_plugin' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Yotpo\\Yotpo\\Plugin\\Review\\Block\\Product\\ReviewRenderer',
+      ),
+    ),
     'Magento\\Framework\\Authorization' => 
     array (
       'customerAuthorization' => 
@@ -4590,6 +4611,11 @@
       array (
         'sortOrder' => 0,
         'instance' => 'Magento\\CatalogInventory\\Block\\Plugin\\ProductView',
+      ),
+      'yotpo_yotpo_catalog_block_product_view_plugin' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Yotpo\\Yotpo\\Plugin\\Catalog\\Block\\Product\\View',
       ),
     ),
     'Magento\\Catalog\\Model\\Product\\Action' => 
@@ -7580,6 +7606,28 @@
         'instance' => 'PayPal\\BraintreeGiftWrapping\\Plugin\\Level23Processing\\PayPal\\AddGiftWrappingPlugin',
       ),
     ),
+    'Magento\\Catalog\\Block\\Product\\ListProduct' => 
+    array (
+      'add_product_object_to_image_data_array' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Magento\\Swatches\\Model\\Plugin\\ProductImage',
+      ),
+      'yotpo_yotpo_catalog_block_product_listproduct_plugin' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Yotpo\\Yotpo\\Plugin\\Catalog\\Block\\Product\\ListProduct',
+      ),
+    ),
+    'Magento\\Catalog\\Block\\Product\\ReviewRendererInterface' => NULL,
+    'Magento\\Review\\Block\\Product\\ReviewRenderer' => 
+    array (
+      'yotpo_yotpo_review_block_product_reviewrenderer_plugin' => 
+      array (
+        'sortOrder' => 0,
+        'instance' => 'Yotpo\\Yotpo\\Plugin\\Review\\Block\\Product\\ReviewRenderer',
+      ),
+    ),
     'Magento\\Framework\\AuthorizationInterface' => NULL,
     'Magento\\Framework\\Authorization' => 
     array (
@@ -8799,6 +8847,13 @@
       4 => 
       array (
         0 => 'quantityValidators',
+      ),
+    ),
+    'Magento\\Catalog\\Block\\Product\\View_toHtml___self' => 
+    array (
+      1 => 
+      array (
+        0 => 'yotpo_yotpo_catalog_block_product_view_plugin',
       ),
     ),
     'Magento\\Catalog\\Model\\Product\\Action_updateAttributes___self' => 
@@ -11231,6 +11286,21 @@
         1 => 'AddGiftCardAccountAsLineItemForPayPal',
         2 => 'AddGiftWrappingAsLineItemForPayPal',
       ),
+    ),
+    'Magento\\Catalog\\Block\\Product\\ListProduct_getImage___self' => 
+    array (
+      1 => 
+      array (
+        0 => 'add_product_object_to_image_data_array',
+      ),
+    ),
+    'Magento\\Catalog\\Block\\Product\\ListProduct_getReviewsSummaryHtml___self' => 
+    array (
+      2 => 'yotpo_yotpo_catalog_block_product_listproduct_plugin',
+    ),
+    'Magento\\Review\\Block\\Product\\ReviewRenderer_getReviewsSummaryHtml___self' => 
+    array (
+      2 => 'yotpo_yotpo_review_block_product_reviewrenderer_plugin',
     ),
     'Magento\\Framework\\Authorization_isAllowed___self' => 
     array (

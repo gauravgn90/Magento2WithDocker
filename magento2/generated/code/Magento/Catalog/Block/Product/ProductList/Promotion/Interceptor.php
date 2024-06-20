@@ -17,6 +17,15 @@ class Interceptor extends \Magento\Catalog\Block\Product\ProductList\Promotion i
     /**
      * {@inheritdoc}
      */
+    public function getReviewsSummaryHtml(\Magento\Catalog\Model\Product $product, $templateType = false, $displayIfNoReviews = false)
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getReviewsSummaryHtml');
+        return $pluginInfo ? $this->___callPlugins('getReviewsSummaryHtml', func_get_args(), $pluginInfo) : parent::getReviewsSummaryHtml($product, $templateType, $displayIfNoReviews);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getProductDetailsHtml(\Magento\Catalog\Model\Product $product)
     {
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getProductDetailsHtml');

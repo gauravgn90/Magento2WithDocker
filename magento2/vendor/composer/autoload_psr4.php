@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'tubalmartin\\CssMin\\' => array($vendorDir . '/tubalmartin/cssmin/src'),
     'phpseclib3\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Yotpo\\Yotpo\\' => array($vendorDir . '/yotpo/module-yotpo'),
     'Yandex\\Allure\\Adapter\\' => array($vendorDir . '/allure-framework/allure-php-commons/src/Legacy'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Webimpress\\SafeWriter\\' => array($vendorDir . '/webimpress/safe-writer/src'),

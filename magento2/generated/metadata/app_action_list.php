@@ -1,4 +1,5 @@
 <?php return array (
+  'custom\\helloworld\\controller\\index\\index' => 'Custom\\HelloWorld\\Controller\\Index\\Index',
   'magento\\adminadobeims\\controller\\adminhtml\\oauth\\imscallback' => 'Magento\\AdminAdobeIms\\Controller\\Adminhtml\\OAuth\\ImsCallback',
   'magento\\adminadobeims\\controller\\adminhtml\\oauth\\imsreauthcallback' => 'Magento\\AdminAdobeIms\\Controller\\Adminhtml\\OAuth\\ImsReauthCallback',
   'magento\\adminanalytics\\controller\\adminhtml\\config\\disableadminusage' => 'Magento\\AdminAnalytics\\Controller\\Adminhtml\\Config\\DisableAdminUsage',
@@ -1314,4 +1315,8 @@
   'paypal\\braintree\\controller\\paypal\\review' => 'PayPal\\Braintree\\Controller\\Paypal\\Review',
   'paypal\\braintree\\controller\\paypal\\saveshippingmethod' => 'PayPal\\Braintree\\Controller\\Paypal\\SaveShippingMethod',
   'paypal\\braintree\\controller\\webhook\\fraudprotection' => 'PayPal\\Braintree\\Controller\\Webhook\\FraudProtection',
+  'yotpo\\yotpo\\controller\\adminhtml\\dashboard\\yotporeviews' => 'Yotpo\\Yotpo\\Controller\\Adminhtml\\Dashboard\\YotpoReviews',
+  'yotpo\\yotpo\\controller\\adminhtml\\external\\analytics' => 'Yotpo\\Yotpo\\Controller\\Adminhtml\\External\\Analytics',
+  'yotpo\\yotpo\\controller\\adminhtml\\external\\reviews' => 'Yotpo\\Yotpo\\Controller\\Adminhtml\\External\\Reviews',
+  'yotpo\\yotpo\\controller\\adminhtml\\report\\reviews' => 'Yotpo\\Yotpo\\Controller\\Adminhtml\\Report\\Reviews',
 );
