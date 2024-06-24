@@ -19,6 +19,8 @@ services:
     links:
       - mariadbserver
       - elasticsearch
+      - logstash
+      - kibana
       - redis
       - rabbitmq
       - mailhog
@@ -27,6 +29,8 @@ services:
     depends_on:
       - mariadbserver
       - elasticsearch
+      - logstash
+      - kibana
       - redis
       - rabbitmq
       - mailhog
@@ -68,6 +72,34 @@ services:
         soft: -1
         hard: -1
     mem_limit: 4g
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.12.1
+    container_name: magento_logstash
+    volumes:
+      - ./Docker/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - logstashdata:/usr/share/logstash/data
+    ports:
+      - "5044:5044"
+    networks:
+      - magento2-network
+    depends_on:
+      - elasticsearch
+
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.12.1
+    container_name: magento_kibana
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    volumes:
+      - kibanadata:/usr/share/kibana/data
+    networks:
+      - magento2-network
+    depends_on:
+      - elasticsearch
 
   redis:
     image: redis:latest
@@ -178,4 +210,8 @@ volumes:
   mariadbdata:
     driver: local
   newrelicdata:
+    driver: local
+  logstashdata:
+    driver: local
+  kibanadata:
     driver: local

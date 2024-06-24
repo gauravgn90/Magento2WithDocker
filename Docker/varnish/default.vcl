@@ -31,6 +31,15 @@ sub vcl_recv {
         set req.hash_always_miss = true;
     }
 
+    if (req.url ~ "^/rest/") {
+        return (hash);
+    }
+
+    if (req.method == "XCGFULLBAN") {
+        ban("req.http.host ~ .*");
+        return (synth(200, "Full cache cleared"));
+    }
+
     if (req.method == "PURGE") {
         if (client.ip !~ purge) {
             return (synth(405, "Method not allowed"));
@@ -200,6 +209,11 @@ sub vcl_backend_response {
     if (bereq.url ~ "/graphql" && bereq.http.X-Magento-Cache-Id && bereq.http.X-Magento-Cache-Id != beresp.http.X-Magento-Cache-Id) {
         set beresp.ttl = 0s;
         set beresp.uncacheable = true;
+    }
+
+     if (bereq.url ~ "^/rest/") {
+        set beresp.ttl = 10m;  # Cache API responses for 10 minutes
+        return (deliver);
     }
 
     return (deliver);
