@@ -1,0 +1,16 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/magento2/*.log
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/magento2/data/*.csv
+  # Optional configuration for CSV files, if you need to add more specific settings
+  fields:
+    log_type: csv
+
+output.logstash:
+  hosts: ["logstash:5044"]

@@ -1,0 +1,11 @@
+FROM docker.elastic.co/beats/filebeat:7.12.1
+USER root
+# Copy the filebeat.yml to the container
+COPY ./Docker/filebeat/filebeat.yml /usr/share/filebeat/filebeat.yml
+
+# Add a custom entry point script
+COPY ./Docker/filebeat/entrypoint.sh /usr/share/filebeat/entrypoint.sh
+RUN chmod +x /usr/share/filebeat/entrypoint.sh
+
+# Use the custom entry point script
+ENTRYPOINT ["/usr/share/filebeat/entrypoint.sh"]

@@ -2,6 +2,18 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'varnish'
+  - job_name: 'prometheus'
     static_configs:
-      - targets: ['192.168.32.12:6081']  # Adjust if Varnish port or service name differs
+      - targets: ['localhost:9090']
+  - job_name: 'mariadb'
+    static_configs:
+      - targets: ['mysql-exporter:9104']
+  - job_name: 'magento'
+    static_configs:
+      - targets: ['php-fpm-exporter:9253']
+  - job_name: 'elasticsearch'
+    static_configs:
+      - targets: ['elasticsearch_exporter:9114']
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx-exporter:9113']
